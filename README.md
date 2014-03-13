@@ -18,10 +18,10 @@ b) get_user - receives as key the user's ID, and returns the user with it's depa
 
 --
 Example:
-  {code}
-  curl http://127.0.0.1:8000/api/get_users/
-  {code}
+```bash
+curl http://127.0.0.1:8000/api/get_users/
+```
 
-  {code}
+```bash
   curl http://127.0.0.1:8000/api/get_users/
-  {code}
+```
