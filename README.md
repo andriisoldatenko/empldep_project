@@ -23,5 +23,5 @@ curl http://127.0.0.1:8000/api/get_users/
 ```
 
 ```bash
-curl http://127.0.0.1:8000/api/get_users/
+curl http://127.0.0.1:8000/api/get_user/1/
 ```
