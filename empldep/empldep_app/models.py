@@ -1,10 +1,20 @@
 from django.db import models
 
 
+class DepartmentManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
+
+
 class Department(models.Model):
-    name = models.CharField(max_length=200)
+    objects = DepartmentManager()
+
+    name = models.CharField(max_length=200, unique=True)
 
     def __unicode__(self):
+        return self.name
+
+    def natural_key(self):
         return self.name
 
 
